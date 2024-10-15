@@ -7,8 +7,9 @@ node_modules/
 .expo/
 dist/
 web-build/
-# 프로젝트 루트의 ios 폴더만 무시
+# 프로젝트 루트의 ios, android 폴더만 무시
 /ios/
+/android/
 # modules/native-carousel/ios 폴더는 추적에 포함
 !/modules/native-carousel/ios/
 

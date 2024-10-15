@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name           = 'NativeCarousel'
+  s.name           = 'ImageCarousel'
   s.version        = '1.0.0'
   s.summary        = 'A sample project summary'
   s.description    = 'A sample project description'
