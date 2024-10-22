@@ -9,12 +9,23 @@ export function ImageCarousel({
   pageWidth,
   pageSpacing,
   style,
-}: NativeImageCarouselProps) {
+  images,
+  thumbnailBoarderColor,
+  onSelectedIndexChange,
+}: Omit<NativeImageCarouselProps, "onEvent">) {
   return (
     <NativeImageCarousel
       style={{ ...(style as object) }}
       pageWidth={pageWidth}
       pageSpacing={pageSpacing}
+      images={images}
+      thumbnailBoarderColor={thumbnailBoarderColor}
+      onEvent={({ nativeEvent }) => {
+        const selectedIndex = nativeEvent.onSelectedIndexChange;
+        if (selectedIndex !== undefined && onSelectedIndexChange) {
+          onSelectedIndexChange(selectedIndex);
+        }
+      }}
     />
   );
 }

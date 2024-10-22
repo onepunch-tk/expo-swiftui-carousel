@@ -5,9 +5,10 @@ import SwiftUI
 // to apply the proper styling (e.g. border radius and shadows).
 class ImageCarouselExpoView: ExpoView {
   let props: ImageCarouselProps
+  let onEvent = EventDispatcher()
   
   required init(appContext: AppContext? = nil) {
-    props = ImageCarouselProps()
+    props = ImageCarouselProps(onEvent: onEvent)
     super.init(appContext: appContext)
            
     let hostingController = UIHostingController(rootView: ImageCarouselView(props: props))

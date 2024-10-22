@@ -30,12 +30,30 @@
     },
     "plugins": [
       "expo-router",
+
       [
         "expo-build-properties",
         {
           "ios": {
             "deploymentTarget": "16.0"
           }
+        }
+      ],
+      [
+        "expo-asset",
+        {
+          "assets": [
+            "./assets/images/Pic1.png",
+            "./assets/images/Pic2.png",
+            "./assets/images/Pic3.png",
+            "./assets/images/Pic4.png",
+            "./assets/images/Pic5.png",
+            "./assets/images/Pic6.png",
+            "./assets/images/Pic7.png",
+            "./assets/images/Pic8.png",
+            "./assets/images/Pic9.png",
+            "./assets/images/Pic10.png"
+          ]
         }
       ]
     ],
